@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoStyle - Стильная одежда для динозавров</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-dragon"></i>
+                    <span>DinoStyle</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#bestsellers">Хиты продаж</a></li>
+                    <li><a href="#about">О магазине</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </button>
+                    <div class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Стильная одежда для современных динозавров!</h1>
+                    <p>Эксклюзивная коллекция одежды для всех видов динозавров. От элегантных нарядов для травоядных до спортивной одежды для хищников.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Смотреть каталог</button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-gift"></i>
+                            Получить скидку 20%
+                        </button>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-badge">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Быстрая доставка</span>
+                        </div>
+                        <div class="feature-badge">
+                            <i class="fas fa-medal"></i>
+                            <span>Премиум качество</span>
+                        </div>
+                        <div class="feature-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Гарантия 100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                                    <div class="product-showcase">
+                    <div class="showcase-item featured">
+                        <div class="product-image">
+                            <img src="foto/Элегантное_платье_для_Брахиозавра.jpg" alt="Элегантное платье для Брахиозавра">
+                        </div>
+                        <div class="product-info">
+                            <h3>Элегантное платье для Брахиозавра</h3>
+                            <span class="price">₽12,999</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-item">
+                        <div class="product-image">
+                            <img src="foto/Спортивный костюм для T-Rex.png" alt="Спортивный костюм для T-Rex">
+                        </div>
+                        <div class="product-info">
+                            <h3>Спортивный костюм для T-Rex</h3>
+                            <span class="price">₽8,499</span>
+                        </div>
+                    </div>
+                    <div class="showcase-item">
+                        <div class="product-image">
+                            <img src="foto/Украшения из костей.png" alt="Украшения из костей">
+                        </div>
+                        <div class="product-info">
+                            <h3>Аксессуары из костей</h3>
+                            <span class="price">₽2,999</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Каталог товаров</h2>
+                <p>Стильная и комфортная одежда для динозавров всех видов и размеров</p>
+            </div>
+            <div class="catalog-filter">
+                <button class="filter-btn active" data-filter="all">Все товары</button>
+                <button class="filter-btn" data-filter="clothes">Одежда</button>
+                <button class="filter-btn" data-filter="accessories">Аксессуары</button>
+                <button class="filter-btn" data-filter="footwear">Обувь</button>
+                <button class="filter-btn" data-filter="premium">Премиум</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="clothes">
+                    <div class="product-image-wrapper">
+                        <img src="foto/Элегантное_платье_для_Брахиозавра.jpg" alt="Элегантное платье для Брахиозавра" class="product-img">
+                        <div class="product-badge">ХИТ</div>
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Элегантное платье для Брахиозавра</h3>
+                        <p class="product-description">Изысканное платье из экологически чистых материалов</p>
+                        <div class="product-price">
+                            <span class="current-price">₽12,999</span>
+                            <span class="old-price">₽15,999</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(127 отзывов)</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothes">
+                    <div class="product-image-wrapper">
+                        <img src="foto/Спортивный костюм для T-Rex.png" alt="Спортивный костюм для T-Rex" class="product-img">
+                        <div class="product-badge new">НОВИНКА</div>
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Спортивный костюм для T-Rex</h3>
+                        <p class="product-description">Прочный костюм для активных хищников</p>
+                        <div class="product-price">
+                            <span class="current-price">₽8,499</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(89 отзывов)</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-wrapper">
+                        <img src="foto/Украшения из костей.png" alt="Украшения из костей" class="product-img">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Украшения из костей</h3>
+                        <p class="product-description">Стильные аксессуары для особых случаев</p>
+                        <div class="product-price">
+                            <span class="current-price">₽2,999</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(203 отзыва)</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="footwear">
+                    <div class="product-image-wrapper">
+                        <img src="foto/Кроссовки для Велоцираптора.png" alt="Кроссовки для Велоцираптора" class="product-img">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Кроссовки для Велоцираптора</h3>
+                        <p class="product-description">Легкие и прочные кроссовки для быстрого бега</p>
+                        <div class="product-price">
+                            <span class="current-price">₽6,499</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(156 отзывов)</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="premium">
+                    <div class="product-image-wrapper">
+                        <img src="foto/Королевская мантия для Трицератопса.png" alt="Королевская мантия для Трицератопса" class="product-img">
+                        <div class="product-badge premium">ПРЕМИУМ</div>
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Королевская мантия для Трицератопса</h3>
+                        <p class="product-description">Роскошная мантия из натуральных материалов</p>
+                        <div class="product-price">
+                            <span class="current-price">₽25,999</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(45 отзывов)</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothes">
+                    <div class="product-image-wrapper">
+                        <img src="foto/Теплая куртка для Диплодока.png" alt="Теплая куртка для Диплодока" class="product-img">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Теплая куртка для Диплодока</h3>
+                        <p class="product-description">Утепленная куртка для холодного климата</p>
+                        <div class="product-price">
+                            <span class="current-price">₽9,999</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(92 отзыва)</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section id="bestsellers" class="bestsellers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Хиты продаж</h2>
+                <p>Самые популярные товары среди наших покупателей</p>
+            </div>
+            <div class="bestsellers-grid">
+                <div class="bestseller-card">
+                    <div class="bestseller-rank">#1</div>
+                    <div class="bestseller-image">
+                        <img src="foto/Элегантное_платье_для_Брахиозавра.jpg" alt="Элегантное платье для Брахиозавра">
+                    </div>
+                    <div class="bestseller-info">
+                        <h3>Элегантное платье для Брахиозавра</h3>
+                        <div class="bestseller-stats">
+                            <span class="sold-count">Продано: 1,247 шт.</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="price">₽12,999</div>
+                        <button class="btn btn-primary">Купить сейчас</button>
+                    </div>
+                </div>
+
+                <div class="bestseller-card">
+                    <div class="bestseller-rank">#2</div>
+                    <div class="bestseller-image">
+                        <img src="foto/Спортивный костюм для T-Rex.png" alt="Спортивный костюм для T-Rex">
+                    </div>
+                    <div class="bestseller-info">
+                        <h3>Спортивный костюм для T-Rex</h3>
+                        <div class="bestseller-stats">
+                            <span class="sold-count">Продано: 892 шт.</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <div class="price">₽8,499</div>
+                        <button class="btn btn-primary">Купить сейчас</button>
+                    </div>
+                </div>
+
+                <div class="bestseller-card">
+                    <div class="bestseller-rank">#3</div>
+                    <div class="bestseller-image">
+                        <img src="foto/Кроссовки для Велоцираптора.png" alt="Кроссовки для Велоцираптора">
+                    </div>
+                    <div class="bestseller-info">
+                        <h3>Кроссовки для Велоцираптора</h3>
+                        <div class="bestseller-stats">
+                            <span class="sold-count">Продано: 743 шт.</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="price">₽6,499</div>
+                        <button class="btn btn-primary">Купить сейчас</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Offer Banner -->
+            <div class="special-offer">
+                <div class="offer-content">
+                    <div class="offer-icon">🎉</div>
+                    <div class="offer-text">
+                        <h3>Специальное предложение!</h3>
+                        <p>Скидка 25% на все товары для новых покупателей</p>
+                    </div>
+                    <div class="offer-action">
+                        <button class="btn btn-secondary">Получить скидку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>О магазине DinoStyle</h2>
+                        <p>Мы — первый и единственный магазин стильной одежды для динозавров. Работаем с 65 миллионов лет до н.э.!</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Премиум качество</h3>
+                                <p>Используем только лучшие материалы для пошива одежды</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Быстрая доставка</h3>
+                                <p>Доставляем по всему Пангею за 1-3 дня</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Довольные клиенты</h3>
+                                <p>98% динозавров рекомендуют нас своим друзьям</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="stats-card">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">50k+</div>
+                                <div class="stat-label">Довольных клиентов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">Товаров в каталоге</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">65млн</div>
+                                <div class="stat-label">Лет на рынке</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Положительных отзывов</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Контакты магазина</h2>
+                <p>Есть вопросы? Свяжитесь с нами любым удобным способом</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p>+7 (999) DINO-123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@dinostyle.shop</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>Пангея, Долина Динозавров, 1</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Режим работы</h3>
+                            <p>Круглосуточно, 365 дней в году</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Задать вопрос</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя (или кличка)" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Тип динозавра</option>
+                            <option value="herbivore">Травоядный</option>
+                            <option value="carnivore">Хищник</option>
+                            <option value="omnivore">Всеядный</option>
+                            <option value="flying">Летающий</option>
+                            <option value="marine">Морской</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Ваш вопрос или пожелание" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <i class="fas fa-dragon"></i>
+                        <span>DinoStyle</span>
+                    </div>
+                    <p>Стильная одежда для современных динозавров</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Каталог</h4>
+                        <ul>
+                            <li><a href="#">Одежда</a></li>
+                            <li><a href="#">Обувь</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                            <li><a href="#">Премиум коллекция</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Покупателям</h4>
+                        <ul>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Размерная сетка</a></li>
+                            <li><a href="#">Возврат товара</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Информация</h4>
+                        <ul>
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DinoStyle. Все права защищены. Работаем с 65 млн лет до н.э.</p>
+            </div>
+        </div>
+    </footer>
+
+
