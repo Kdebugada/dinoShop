@@ -1,0 +1,26 @@
+{
+    "name": "DinoStyle - Стильная одежда для динозавров",
+    "short_name": "DinoStyle",
+    "description": "Эксклюзивная коллекция одежды для всех видов динозавров",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#6366f1",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiM2MzY2ZjEiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAyQzEzLjEgMiAxNCAyLjkgMTQgNFY4SDEwVjRDMTAgMi45IDEwLjkgMiAxMiAyWk0yMSAxMEgxOFY4QzE4IDYuOSAxNy4xIDYgMTYgNkg4QzYuOSA2IDYgNi45IDYgOFYxMEgzQzEuOSAxMCAxIDEwLjkgMSAxMlYxNkMxIDE3LjEgMS45IDE4IDMgMThINlYyMEM2IDIxLjEgNi45IDIyIDggMjJIMTZDMTcuMSAyMiAxOCAyMS4xIDE4IDIwVjE4SDIxQzIyLjEgMTggMjMgMTcuMSAyMyAxNlYxMkMyMyAxMC45IDIyLjEgMTAgMjEgMTBaIi8+Cjwvc3ZnPgo8L3N2Zz4K",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiM2MzY2ZjEiLz4KPHN2ZyB4PSIxMjgiIHk9IjEyOCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPgo8cGF0aCBkPSJNMTIgMkMxMy4xIDIgMTQgMi45IDE0IDRWOEgxMFY0QzEwIDIuOSAxMC45IDIgMTIgMlpNMjEgMTBIMThWOEMxOCA2LjkgMTcuMSA2IDE2IDZIOEMNi45IDYgNiA2LjkgNiA4VjEwSDNDMS45IDEwIDEgMTAuOSAxIDEyVjE2QzEgMTcuMSAxLjkgMTggMyAxOEg2VjIwQzYgMjEuMSA2LjkgMjIgOCAyMkgxNkMxNy4xIDIyIDE4IDIxLjEgMTggMjBWMThIMjFDMjIuMSAxOCAyMyAxNy4xIDIzIDE2VjEyQzIzIDEwLjkgMjIuMSAxMCAyMSAxMFoiLz4KPC9zdmc+Cjwvc3ZnPgo=",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ],
+    "categories": ["shopping", "lifestyle"],
+    "lang": "ru",
+    "dir": "ltr",
+    "prefer_related_applications": false
+} 
