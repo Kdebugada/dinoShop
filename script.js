@@ -200,7 +200,8 @@ class ProductShowcase extends TouchHandler {
         this.currentIndex = 0;
         this.isMobile = window.innerWidth <= 768;
         
-        if (this.isMobile && this.showcase) {
+        // Отключаем на мобильных, так как showcase скрыт
+        if (false && this.isMobile && this.showcase) {
             this.init();
         }
     }
